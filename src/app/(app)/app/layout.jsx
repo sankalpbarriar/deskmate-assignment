@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <>
       <BackgroundPattern />
-      <div className=" flex flex-col max-w-[1100px] mx-auto px-3 min-h-screen">
+      <div className="bg-[#eaecec] flex flex-col w-full mx-auto px-3 min-h-screen">
         {children}
       </div>
     </>

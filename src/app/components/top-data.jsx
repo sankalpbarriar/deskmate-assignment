@@ -2,7 +2,7 @@ import React from 'react';
 
 function TopData() {
   return (
-    <div className='my-3 p-6 bg-white/50 h-auto sm:h-[190px] flex gap-6 items-center justify-between'>
+    <div className='my-3 p-6 bg-white/50 h-auto sm:h-[190px] flex gap-6 items-center justify-between mx-5 rounded-lg'>
       <div className='flex flex-col justify-center items-center mx-6'>
         <h1 className='text-3xl sm:text-5xl font-bold p-2'>80</h1>
         <p>Total Beds in PG</p>

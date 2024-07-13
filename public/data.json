@@ -1,0 +1,92 @@
+{
+    "Floors": [
+        {
+            "1": {
+                "room-no.": {
+                    "G001": { "beds": 4, "status": "available for booking" },
+                    "G002": { "beds": 3, "status": "occupied" },
+                    "G003": { "beds": 2, "status": "vacating in 60 days" },
+                    "G004": { "beds": 1, "status": "occupied" },
+                    "G005": { "beds": 3, "status": "available for booking" },
+                    "G006": { "beds": 4, "status": "vacating in 60 days" },
+                    "G007": { "beds": 2, "status": "occupied" },
+                    "G008": { "beds": 1, "status": "available for booking" },
+                    "G009": { "beds": 3, "status": "vacating in 60 days" },
+                    "G010": { "beds": 4, "status": "occupied" },
+                    "G011": { "beds": 2, "status": "available for booking" },
+                    "G012": { "beds": 1, "status": "occupied" },
+                    "G013": { "beds": 3, "status": "vacating in 60 days" },
+                    "G014": { "beds": 4, "status": "available for booking" },
+                    "G015": { "beds": 2, "status": "occupied" },
+                    "G016": { "beds": 1, "status": "vacating in 60 days" }
+                }
+            }
+        },
+        {
+            "2": {
+                "room-no.": {
+                    "F001": { "beds": 4, "status": "occupied" },
+                    "F002": { "beds": 3, "status": "available for booking" },
+                    "F003": { "beds": 2, "status": "vacating in 60 days" },
+                    "F004": { "beds": 1, "status": "occupied" },
+                    "F005": { "beds": 3, "status": "available for booking" },
+                    "F006": { "beds": 4, "status": "vacating in 60 days" },
+                    "F007": { "beds": 2, "status": "occupied" },
+                    "F008": { "beds": 1, "status": "available for booking" },
+                    "F009": { "beds": 3, "status": "vacating in 60 days" },
+                    "F010": { "beds": 4, "status": "occupied" },
+                    "F011": { "beds": 2, "status": "available for booking" },
+                    "F012": { "beds": 1, "status": "occupied" },
+                    "F013": { "beds": 3, "status": "vacating in 60 days" },
+                    "F014": { "beds": 4, "status": "available for booking" },
+                    "F015": { "beds": 2, "status": "occupied" },
+                    "F016": { "beds": 1, "status": "vacating in 60 days" }
+                }
+            }
+        },
+        {
+            "3": {
+                "room-no.": {
+                    "T001": { "beds": 4, "status": "available for booking" },
+                    "T002": { "beds": 3, "status": "occupied" },
+                    "T003": { "beds": 2, "status": "vacating in 60 days" },
+                    "T004": { "beds": 1, "status": "occupied" },
+                    "T005": { "beds": 3, "status": "available for booking" },
+                    "T006": { "beds": 4, "status": "vacating in 60 days" },
+                    "T007": { "beds": 2, "status": "occupied" },
+                    "T008": { "beds": 1, "status": "available for booking" },
+                    "T009": { "beds": 3, "status": "vacating in 60 days" },
+                    "T010": { "beds": 4, "status": "occupied" },
+                    "T011": { "beds": 2, "status": "available for booking" },
+                    "T012": { "beds": 1, "status": "occupied" },
+                    "T013": { "beds": 3, "status": "vacating in 60 days" },
+                    "T014": { "beds": 4, "status": "available for booking" },
+                    "T015": { "beds": 2, "status": "occupied" },
+                    "T016": { "beds": 1, "status": "vacating in 60 days" }
+                }
+            }
+        },
+        {
+            "4": {
+                "room-no.": {
+                    "B001": { "beds": 4, "status": "occupied" },
+                    "B002": { "beds": 3, "status": "available for booking" },
+                    "B003": { "beds": 2, "status": "vacating in 60 days" },
+                    "B004": { "beds": 1, "status": "occupied" },
+                    "B005": { "beds": 3, "status": "available for booking" },
+                    "B006": { "beds": 4, "status": "vacating in 60 days" },
+                    "B007": { "beds": 2, "status": "occupied" },
+                    "B008": { "beds": 1, "status": "available for booking" },
+                    "B009": { "beds": 3, "status": "vacating in 60 days" },
+                    "B010": { "beds": 4, "status": "occupied" },
+                    "B011": { "beds": 2, "status": "available for booking" },
+                    "B012": { "beds": 1, "status": "occupied" },
+                    "B013": { "beds": 3, "status": "vacating in 60 days" },
+                    "B014": { "beds": 4, "status": "available for booking" },
+                    "B015": { "beds": 2, "status": "occupied" },
+                    "B016": { "beds": 1, "status": "vacating in 60 days" }
+                }
+            }
+        }
+    ]
+}

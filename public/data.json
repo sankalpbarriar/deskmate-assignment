@@ -13,8 +13,6 @@
           "G008": { "beds": 1, "status": "available for booking" },
           "G009": { "beds": 3, "status": "vacating in 60 days" },
           "G010": { "beds": 4, "status": "occupied" },
-          "G012": { "beds": 1, "status": "occupied" },
-          "G013": { "beds": 3, "status": "vacating in 60 days" },
           "G014": { "beds": 4, "status": "available for booking" },
           "G015": { "beds": 2, "status": "occupied" },
           "G016": { "beds": 1, "status": "vacating in 60 days" }
@@ -72,7 +70,6 @@
           "B008": { "beds": 1, "status": "available for booking" },
           "B009": { "beds": 3, "status": "vacating in 60 days" },
           "B010": { "beds": 4, "status": "available for booking" },
-          "B011": { "beds": 2, "status": "available for booking" },
           "B012": { "beds": 1, "status": "occupied" },
           "B013": { "beds": 3, "status": "vacating in 60 days" },
           "B014": { "beds": 4, "status": "available for booking" },

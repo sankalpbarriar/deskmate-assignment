@@ -1,7 +1,7 @@
 import React from 'react';
-import { Search, List } from 'lucide-react'; // Import Lucide Search and List icons
+import { Search, List } from 'lucide-react'; 
 
-function TopBar() {
+function TopBar({ searchQuery, onSearchChange }) {
   return (
     <header className='my-6 flex flex-row justify-between items-center rounded-sm mx-4'>
       <h2 className='text-lg sm:text-xl font-semibold'>Rooms Management</h2>
@@ -10,9 +10,11 @@ function TopBar() {
           <Search size="15px" />
         </div>
         <input
-          className='p-2 pl-10 pr-12 text-sm border rounded-md w-full sm:placeholder:block md:placeholder:block lg:placeholder:block xl:placeholder:block'
-          type='text'
-          placeholder='Search Room no.'
+          type="text"
+          placeholder="Search by room number..."
+          value={searchQuery}
+          onChange={(e) => onSearchChange(e.target.value)}
+          className="p-2 pl-10 pr-12 text-sm border rounded-md w-full sm:placeholder:block md:placeholder:block lg:placeholder:block xl:placeholder:block"
         />
         <div className="absolute right-3 top-3 text-gray-500 pointer-events-none">
           <List size="20px" />

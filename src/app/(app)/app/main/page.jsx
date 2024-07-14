@@ -1,15 +1,26 @@
-import TopData from '@/app/components/top-data';
-import TopBar from '@/app/components/topbar';
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import data from '../../../../../public/data.json';
+import TopBar from '@/app/components/topbar';
 import Folder from '@/app/components/folders';
+import TopData from '@/app/components/top-data';
+
 
 function Page() {
   const { Floors } = data;
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchChange = (query) => {
+    setSearchQuery(query);
+  };
+
+  const filterRooms = (rooms) => {
+    return rooms.filter((room) => room.number.includes(searchQuery));
+  };
 
   return (
     <>
-      <TopBar />
+      <TopBar searchQuery={searchQuery} onSearchChange={handleSearchChange} />
       <TopData />
       <div className="App p-4 space-y-4">
         {Floors.map((floorData, floorIndex) => {
@@ -19,7 +30,8 @@ function Page() {
             beds,
             status,
           }));
-          return <Folder key={floorIndex} floor={floorNumber} rooms={rooms} />;
+          const filteredRooms = filterRooms(rooms);
+          return <Folder key={floorIndex} floor={floorNumber} rooms={filteredRooms} />;
         })}
       </div>
     </>

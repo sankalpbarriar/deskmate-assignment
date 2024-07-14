@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from '../../../public/data.json';
 
 function TopData() {
   const { Floors } = data;
-
   const totalBeds = Floors.reduce((total, floor) => {
     const floorNumber = Object.keys(floor)[0];
     return total + Object.values(floor[floorNumber]['room-no.']).reduce((acc, room) => acc + room.beds, 0);

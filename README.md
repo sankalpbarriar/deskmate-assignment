@@ -8,7 +8,7 @@ name- Sankalp Barriar
 email- sankalpbarriar10@gmail.com
 
 <br/>
-live link- https://deskmate-assignment.vercel.app/app/main
+live link- https://room-management-eight.vercel.app/app/main
 <br/>
 
 

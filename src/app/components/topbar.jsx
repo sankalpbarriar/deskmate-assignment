@@ -14,7 +14,7 @@ function TopBar({ searchQuery, onSearchChange }) {
           placeholder="room no."
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="p-2 sm:px-10 px-0 text-sm border rounded-md sm:w-full text-center "
+          className="p-2 sm:px-10 px-0 text-sm border rounded-md sm:w-full w-[120px] text-center "
         />
         <div className="absolute right-3 top-3 text-gray-500 pointer-events-none text-center">
           <List size="15px"  />

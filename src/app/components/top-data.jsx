@@ -23,14 +23,14 @@ function TopData() {
   }, 0);
 
   return (
-    <div className='sm:my-3 sm:p-6 p-2 bg-white/50 h-auto sm:h-[190px] flex sm:flex-row flex-row sm:gap-6 gap-1 items-center justify-between sm:mx-5 mx-2 rounded-lg'>
+    <div className='sm:my-3 sm:p-6 p-2 bg-white/50 h-auto sm:h-[190px] flex sm:flex-row flex-row sm:gap-6 gap-1  items-center justify-between sm:mx-5 mx-2 rounded-lg'>
       <div className='flex flex-col items-center mx-3 text-center'>
         <h1 className='text-3xl sm:text-5xl font-bold p-2'>{totalBeds}</h1>
         <p className='text-[10px] sm:text-sm'>Total Beds in PG</p>
       </div>
       <div className='flex flex-col justify-center items-center text-green mx-3 text-center'>
         <h1 className='text-3xl sm:text-5xl font-bold p-2'>{totalAvailableBeds}</h1>
-        <p className='text-[10px] sm:text-sm'>Total Available Beds</p>
+        <p className='text-[10px] sm:text-sm'>Total Avai-able beds</p>
       </div>
       <div className='flex flex-col justify-center items-center text-yellow mx-3 text-center'>
         <h1 className='text-3xl sm:text-5xl font-bold p-2'>{totalVacatingBeds}</h1>
@@ -38,7 +38,7 @@ function TopData() {
       </div>
       <div className='flex flex-col justify-center items-center text-red mx-3 text-center'>
         <h1 className='text-3xl sm:text-5xl font-bold p-2'>{totalOccupiedBeds}</h1>
-        <p className='text-[10px] sm:text-sm'>Total Occupied Beds</p>
+        <p className='text-[10px] sm:text-sm'>Total Occu-pied Beds</p>
       </div>
     </div>
   );

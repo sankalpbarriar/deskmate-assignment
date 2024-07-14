@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import data from '../../../public/data.json';
 
 function TopData() {

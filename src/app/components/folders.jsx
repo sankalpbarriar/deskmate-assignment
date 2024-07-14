@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Folder({ floor, rooms }) {
+function Folder({ floor, rooms, floors, selectedFloor, onSelectFloor }) {
   const getImageSrc = (status) => {
     switch (status) {
       case 'occupied':
@@ -18,15 +18,29 @@ function Folder({ floor, rooms }) {
 
   return (
     <div className="relative">
-      <div className="absolute -top-6 left-4 font-bold text-lg bg-white/50 px-2 py-1 rounded-lg">
+      <div className="absolute -top-6 left-4 font-bold text-lg bg-white/50 px-2 py-1 rounded-lg hidden sm:block">
         {floor}{floor === "3" ? "rd" : "th"} floor
       </div>
+      
+      {/* for Small Screens */}
+      <div className="absolute -top-6 left-4 text-sm bg-white/50 px-2 py-1 rounded-lg sm:hidden">
+        <select value={selectedFloor} onChange={(e) => onSelectFloor(e.target.value)} className="p-2 border rounded">
+          {floors.map((floor, index) => (
+            <option key={index} value={floor}>
+              {floor}{floor === "3" ? "rd" : "th"} floor
+            </option>
+          ))}
+        </select>
+      </div>
+      
       <div className="absolute -top-6 right-4 text-yellow bg-white/50 px-2 py-1 rounded-lg">
-        <span className='text-2xl sm:text-3xl font-semibold'>
+        <span className='text-xl sm:text-3xl tracking-tighter font-semibold'>
           {rooms.reduce((acc, room) => (room.status === 'vacating in 60 days' ? acc + room.beds : acc), 0)}
         </span> <span className='tracking-tight text-yellow sm:text-xl text-sm'>Vacating in 60 days</span>
       </div>
-      <div className="bg-white/50 bg-opacity-90 p-8 rounded-lg mt-8">
+      
+      {/* Room Display */}
+      <div className="bg-white/50 bg-opacity-90 p-8 rounded-lg mt-8 overflow-auto max-h-[500px] sm:max-h-none">
         {rooms.length === 0 ? (
           <div className="text-center text-gray-500">No rooms found.</div>
         ) : (

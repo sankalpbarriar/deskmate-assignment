@@ -18,7 +18,7 @@ function Folder({ floor, rooms, floors, selectedFloor, onSelectFloor }) {
 
   return (
     <div className="relative">
-      <div className="absolute -top-6 left-4 font-bold text-lg bg-white/50 px-2 py-1 rounded-lg hidden sm:block">
+      <div className="absolute -top-6 left-4 font-bold sm:text-lg text-sm bg-white/50 px-2 py-1 rounded-lg hidden sm:block">
         {floor}{floor === "3" ? "rd" : "th"} floor
       </div>
       
@@ -36,7 +36,7 @@ function Folder({ floor, rooms, floors, selectedFloor, onSelectFloor }) {
       <div className="absolute -top-6 right-4 text-yellow bg-white/50 px-2 py-1 rounded-lg">
         <span className='text-xl sm:text-3xl tracking-tighter font-semibold'>
           {rooms.reduce((acc, room) => (room.status === 'vacating in 60 days' ? acc + room.beds : acc), 0)}
-        </span> <span className='tracking-tight text-yellow sm:text-xl text-sm'>Vacating in 60 days</span>
+        </span> <span className='tracking-tight text-yellow sm:text-xl text-[10px]'>Vacating in 60 days</span>
       </div>
       
       {/* Room Display */}
